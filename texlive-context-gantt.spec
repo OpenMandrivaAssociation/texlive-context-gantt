@@ -1,3 +1,9 @@
+# revision 24044
+# category ConTeXt
+# catalog-ctan /macros/context/contrib/context-gantt
+# catalog-date 2011-09-20 21:18:19 +0200
+# catalog-license pd
+# catalog-version undef
 Name:		texlive-context-gantt
 Version:	20110920
 Release:	1
@@ -52,6 +58,7 @@ pgf/tikz.
 %doc %{_texmfdistdir}/doc/context/third/gantt/examples/gantt-4.tex
 %doc %{_texmfdistdir}/doc/context/third/gantt/examples/gantt-5.tex
 %doc %{_texmfdistdir}/doc/context/third/gantt/gantt.txt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,3 +69,5 @@ pgf/tikz.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
