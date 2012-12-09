@@ -1,4 +1,4 @@
-# revision 27472
+# revision 25712
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-gantt
 # catalog-date 2012-03-20 08:48:23 +0100
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-context-gantt
 Version:	20120320
-Release:	2
+Release:	1
 Summary:	GANTT module for ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-gantt
@@ -54,3 +54,21 @@ pgf/tikz.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120320-1
++ Revision: 787577
+- Update to latest release.
+
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110920-2
++ Revision: 750498
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110920-1
++ Revision: 718133
+- texlive-context-gantt
+- texlive-context-gantt
+- texlive-context-gantt
+- texlive-context-gantt
+
