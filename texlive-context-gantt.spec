@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-context-gantt
 Version:	20120320
-Release:	4
+Release:	5
 Summary:	GANTT module for ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-gantt
