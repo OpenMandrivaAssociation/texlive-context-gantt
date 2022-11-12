@@ -1,18 +1,12 @@
-# revision 27472
-# category ConTeXt
-# catalog-ctan /macros/context/contrib/context-gantt
-# catalog-date 2012-03-20 08:48:23 +0100
-# catalog-license pd
-# catalog-version undef
 Name:		texlive-context-gantt
-Version:	20170414
-Release:	2
+Version:	47085
+Release:	1
 Summary:	GANTT module for ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-gantt
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-gantt.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-gantt.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-gantt.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-gantt.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,29 +19,21 @@ Gantt is a module for drawing Gantt charts via metapost or
 pgf/tikz.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/context/third/gantt/gantt-s-mp.tex
-%{_texmfdistdir}/tex/context/third/gantt/gantt-s-tikz.tex
-%{_texmfdistdir}/tex/context/third/gantt/t-gantt.tex
-%doc %{_texmfdistdir}/doc/context/third/gantt/README
-%doc %{_texmfdistdir}/doc/context/third/gantt/examples/gantt-1.tex
-%doc %{_texmfdistdir}/doc/context/third/gantt/examples/gantt-2.tex
-%doc %{_texmfdistdir}/doc/context/third/gantt/examples/gantt-3.tex
-%doc %{_texmfdistdir}/doc/context/third/gantt/examples/gantt-4.tex
-%doc %{_texmfdistdir}/doc/context/third/gantt/examples/gantt-5.tex
-%doc %{_texmfdistdir}/doc/context/third/gantt/gantt.txt
+%{_texmfdistdir}/tex/context/third/gantt
+%doc %{_texmfdistdir}/doc/context/third/gantt
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
