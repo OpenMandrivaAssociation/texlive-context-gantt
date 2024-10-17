@@ -3,7 +3,7 @@ Version:	47085
 Release:	2
 Summary:	GANTT module for ConTeXt
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-gantt
+URL:		https://www.ctan.org/tex-archive/macros/context/contrib/context-gantt
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-gantt.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-gantt.doc.r%{version}.tar.xz
